@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="Store 碎片">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/typesctipt/ty.html"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="TypeScript">
+    <meta property="og:description" content="Hexo Theme Redefine">
+    <meta property="og:url" content="http://example.comtypesctipt/ty.html">
+    
+    <meta property="og:site_name" content="During">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TypeScript">
+    <meta name="twitter:description" content="Hexo Theme Redefine">
+    <meta name="twitter:image" content="/images/redefine-favicon.svg">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#005080">
+    <link rel="shortcut icon" href="/images/redefine-favicon.svg">
+    
+    <title>
+        
+            TypeScript -
+        
+        During
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/fonts.css">
+
+    
+    
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/redefine-avatar.svg","favicon":"/images/redefine-favicon.svg","og_image":{"enable":false,"image_url":null},"article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"Theme Redefine","custom_font":{"enable":false,"font_family":null,"font_url":null},"font_sizes":{"title":"2.8rem","subtitle":"1.5rem"},"line_height":1.2,"title":"Theme Redefine","subtitle":{"enable":false,"list":[]}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.2.3","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":false,"audio":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}}};
+    REDEFINE.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                During
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首页
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                        基础&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/link1">HTML+CSS
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link1">JAVASCRIPT
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/typescript/ty">TYPESCRIPT
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                        VUE&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/link1">VUE 2
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link2">VUE ROUTER
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link3">VUEX 状态管理
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link3">VUE CIL
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link3">VUE 3
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link3">PINIA 状态管理
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular"></i>
+                                        
+                                        REACT&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/link1">REACT ROUTER
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link1">REDUX TOOLKIT
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular"></i>
+                                        
+                                        STORE 碎片&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/link1">封装拦截器
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/link2">ELEMENT PLUS
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                        博客搭建&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/blog-building/blog">HEXO博客搭建
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/blog-building/topic">使用HEXO主题
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/blog-building/deploy">HEXO部署到GITHUB
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/blog-building/hot_update">HEXO配置热更新
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                基础&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link1">HTML+CSS</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link1">JAVASCRIPT</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/typescript/ty">TYPESCRIPT</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                VUE&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link1">VUE 2</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link2">VUE ROUTER</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link3">VUEX 状态管理</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link3">VUE CIL</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link3">VUE 3</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link3">PINIA 状态管理</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular"></i>
+                                
+                                REACT&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link1">REACT ROUTER</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link1">REDUX TOOLKIT</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular"></i>
+                                
+                                STORE 碎片&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link1">封装拦截器</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/link2">ELEMENT PLUS</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                博客搭建&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/blog-building/blog">HEXO博客搭建</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/blog-building/topic">使用HEXO主题</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/blog-building/deploy">HEXO部署到GITHUB</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/blog-building/hot_update">HEXO配置热更新</a>
+                            </li>
+                        
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="page-template-container">
+        
+        
+        <div class="page-template-content markdown-body">
+            
+                <h1 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h1><ul>
+<li>Ts 解决 Js 的类型问题。及 在定义的数据类型，与服务器响应的数据类型二者不一致，与我预想的数据类型的时候，容易发现错误。ts解决这个类型错误，但不会影响这个运行结果。 （静态类型检测器，类型推断）</li>
+<li>在编译的时候，及时发现错误，能有效减少运行时异常出现的机率。是一种严格的语法</li>
+<li>便于后期维护</li>
+<li>ts代码先有编译器编译为js代码，再去js解析器再去执行。ts是js的超集，完全兼容js。</li>
+</ul>
+<h1 id="编译TS"><a href="#编译TS" class="headerlink" title="编译TS"></a>编译TS</h1><p><em>ts需要编译为js后</em>，借由js解析器运行在浏览器端。</p>
+<ul>
+<li>手动编译。<br><br> tsc 文件名 — tsc .&#x2F;helloworld.ts  </li>
+<li>vscode自动编译。<br><br> 先初始化 tsc -init 打开 tsconfig.json 配置文件<ul>
+<li>target : ts编译为什么样的形式（标准）</li>
+<li>module : TypeScript文件中的module，采用何种方式实现</li>
+<li>outDir : ts编译过后的js文件，存放在何处</li>
+<li>strict : 严格模式</li>
+</ul>
+</li>
+</ul>
+<h1 id="Ts-基础"><a href="#Ts-基础" class="headerlink" title="Ts 基础"></a>Ts 基础</h1><p><em>Js数据类型分为两种，原始数据类型和复杂数据类型。ts的类型声明指定ts变量、参数的数据类型。如果没有定义数据类型，ts会自动推导数据类型</em></p>
+<ul>
+<li>ts 会自动推导数据的类型，如果该变量的数据类型与定义的数据类型不一样的时候，就会报错。</li>
+<li>定义了什么类型的变量，就只能赋什么样的数据类型<br ></li>
+</ul>
+<hr>
+<h3 id="undefined-与-null"><a href="#undefined-与-null" class="headerlink" title="undefined 与 null"></a>undefined 与 null</h3><p><em>还可以作为其他类型的子类型，可以赋值给其他数据类型的变量（严格模式除外）</em> <br></p>
+<hr>
+<h3 id="数组-Array-与-对象-object"><a href="#数组-Array-与-对象-object" class="headerlink" title="数组 Array 与 对象 object"></a>数组 Array 与 对象 object</h3><ul>
+<li>如果数组的类型被定义了，里面的参数就只能是定义好了的数据类型的类型<br>。如果数组的参数没有被定义，就不需要设置数组的数据类型</li>
+<li>数组的类型声明有两种方式，字面量和泛型</li>
+<li>对象的类型声明 ： <br><br><em>比较特殊的是,object 表示非原始类型，就是除了number,string,boolean之外的类型</em><br>对象的类型声明，通过构造函数去赋值不会报错，但字面量定义的方式会报错 （null，undefined，String，[],new 构造函数。不会报错）</li>
+</ul>
+<hr>
+<h3 id="任何类型-any"><a href="#任何类型-any" class="headerlink" title="任何类型 any"></a>任何类型 any</h3><p><em>对于布尔值有两种表达形式，ture 和 1，但对于Ts而言，布尔值指的只有true,false</em> <br><br><em>对于数组中的数据类型，数组中存储的数据类型是各种各样的,不能确定，此时可以 arr:any[ ] 来定义</em></p>
+<ul>
+<li>any类型。数据类型无法确定的情况下 变量的类型是什么的时候，可以使用 any 来定义。但ts存在的意义就是对数据进行约束, any的使用，需要根据实际情况来使用</li>
+</ul>
+<hr>
+<h3 id="空值-void"><a href="#空值-void" class="headerlink" title="空值 void"></a>空值 void</h3><ul>
+<li>表示没有返回值的函数。虽然也能用来定义数据类型，但这种实际意义不大。</li>
+</ul>
+<h1 id="类型推论"><a href="#类型推论" class="headerlink" title="类型推论"></a>类型推论</h1><p><em>没有明确的指定类型的话，ts会自动推断该数据的类型</em></p>
+<ul>
+<li>定义变量的时候，没有直接定义变量的数据类型，则定义类型为对应的类型 <ul>
+<li>let num &#x3D; 124 </li>
+<li>num &#x3D; 数值类型的值</li>
+</ul>
+</li>
+<li>仅声明变量，没有定义该变量的数据类型是，会定义该类型为any类型<ul>
+<li>let num;</li>
+<li>num &#x3D; 123 ; num&#x3D;”123” ; num &#x3D; true …</li>
+</ul>
+</li>
+</ul>
+<h1 id="联合类型"><a href="#联合类型" class="headerlink" title="联合类型"></a>联合类型</h1><p><em>表示取值可以为多种数据类型中的一种。Ts不确定一个联合类型的变量到底是什么数据类型的时候，能访问的属性和方法就只在联合类型的范围之内</em></p>
+<ul>
+<li>例如：我确定返回的数据是 boolean 或是 string ,这时候就不要使用any类型来定义，而是使用联合类型。（any类型是用来规避Ts的类型检查）</li>
+<li>如果对该变量再次赋值，Ts 会自动判断该类型</li>
+<li>let num : number | boolean | number &#x3D; true  </li>
+<li>共有属性和方法 toString() …</li>
+</ul>
+<h1 id="对象的类型-接口"><a href="#对象的类型-接口" class="headerlink" title="对象的类型 - 接口"></a>对象的类型 - 接口</h1><p><em>用来定义对象的类型。在面向对象语言中，接口（interface）是一个重要的概念，它是对行为的抽象，具体的实现需要类（class）去实现（impolement）.在 Ts 中，可以对对象的某一行为进行抽象，也可以对对象的数据类型进行描述。</em></p>
+<ul>
+<li>简单来讲，就是约束。约束对象中属性的数据类型。</li>
+<li>定义接口的时候，建议使用I作为前缀，例如（ IPerson ）</li>
+<li>实现接口时，不允许少一项接口的属性，也不能多一项属性<br></li>
+</ul>
+<h3 id="可选属性-不一定需要实现这个属性"><a href="#可选属性-不一定需要实现这个属性" class="headerlink" title="可选属性 ? ,不一定需要实现这个属性"></a>可选属性 ? ,不一定需要实现这个属性</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type obj = &#123;</span><br><span class="line">  age?:number</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="任意属性，-propName-type-type"><a href="#任意属性，-propName-type-type" class="headerlink" title="任意属性，[propName:type] : type"></a>任意属性，[propName:type] : type</h3><p><em>某些情况下，允许一个接口有任意的属性。即，在实现接口的时候，不确定那个对象是否需要添加其他的属性，也不能确定这个属性的名称、类型是什么的时候。</em></p>
+<ul>
+<li>[propName:string] ,确认了 propName 这个属性的是一个字符串<ul>
+<li>值得一提的是，js对象的键值，都是以一个字符串的显示来表示，如果该 key 是一个数值类型，也会转化为一个字符串；如果是对象，会默认调用tostring进行转换（[object Object]）。换而言之，对象的键被自动转换为字符串。</li>
+</ul>
+</li>
+<li>一旦定义了任意属性，那么就确定了属性和可选属性的类型都必须是它的子集</li>
+<li>一个接口只允许有一个 任意属性</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 约束对象中属性的数据类型</span><br><span class="line">interface IPerson&#123;</span><br><span class="line">    name:string,</span><br><span class="line">   readonly age:string,</span><br><span class="line">    // 可选 ？ 不一定需要实现</span><br><span class="line">    top?:string,</span><br><span class="line">    // 如果确定 value的值为 string。也就确定类 上面的数据类型都是string</span><br><span class="line">    [propName:string]:string</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="只读属性"><a href="#只读属性" class="headerlink" title="只读属性"></a>只读属性</h3><ul>
+<li>在定义接口的时候，就定义属性只能可读，这样在实现的时候，从一开始就确定了其值不被修改，增加了安全性</li>
+</ul>
+<h1 id="接口定义-数组类型"><a href="#接口定义-数组类型" class="headerlink" title="接口定义-数组类型"></a>接口定义-数组类型</h1><p>接口也可以定义数组的数据类型</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">interface Iarr&#123;</span><br><span class="line">    // 设置签名</span><br><span class="line">    [key : number] : string</span><br><span class="line">&#125;</span><br><span class="line">let arrI :Iarr = [&#x27;123&#x27;,&#x27;123&#x27;]</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="接口定义-函数类型"><a href="#接口定义-函数类型" class="headerlink" title="接口定义-函数类型"></a>接口定义-函数类型</h1><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">interface MyFn &#123;</span><br><span class="line">  &lt;!-- 形参，形参类型 : 返回值类型--&gt;</span><br><span class="line">  (a:string,b:string): boolean</span><br><span class="line">&#125;</span><br><span class="line">const YouFn : MyFn = function (a:string,b:string):boolean&#123;</span><br><span class="line">  return a.search(b) == -1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//完整的函数声明，连存储函数的变量都有类型</span><br><span class="line">const add3:(a:string,b:string)=&gt;string = function (a:string,b:string):string&#123;</span><br><span class="line">    return a+b</span><br><span class="line">&#125;</span><br><span class="line">//定义了参数的类型都是 number ,并且返回值也是number的类型</span><br><span class="line">函数的返回值类型，在形参定义完之后，双括号之前</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><p>关于形参，不允许少一个形参也不允许多一个形参</p>
+</li>
+<li><p>可选参数与默认参数</p>
+<ul>
+<li>必选参数不可位于可选参数的后面</li>
+<li>可选参数的值，默认为undefined</li>
+<li>默认参数在赋值的时候，就指定值</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function fun(a:string,b?:string,c:string=&quot;nhao&quot;) &#123;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<h2 id="必选参数"><a href="#必选参数" class="headerlink" title="必选参数"></a>必选参数</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//普通的定义函数的形参，就是必选参数</span><br><span class="line">function demo (a:string,b:string)&#123;&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="可选参数"><a href="#可选参数" class="headerlink" title="可选参数"></a>可选参数</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//并非所有的情况，都需要填写所有的参数 【 形参名?:参数类型  】</span><br><span class="line">function demo (name:string,age?:number)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a>默认参数</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//在定义形参的时候，就已经赋默认值</span><br><span class="line">function demo (name:string = &quot;during&quot;)  【 形参名:参数类型 = &quot;具体值&quot; 】</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="剩余参数"><a href="#剩余参数" class="headerlink" title="剩余参数"></a>剩余参数</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//定义函数时，不确定传入具体个数的参数。获取剩余的参数</span><br><span class="line">// 剩余参数。  ...args 是一个数组</span><br><span class="line">// ...args:string[] 指定了它的数据类型</span><br><span class="line">function fun_13(x:string,y:string,...args:string[])&#123;</span><br><span class="line">    console.log(x,y,args);</span><br><span class="line">&#125;</span><br><span class="line">fun_13(&#x27;hello&#x27;,&#x27;world&#x27;,&#x27;123&#x27;,&#x27;312&#x27;)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 声明：</span><br><span class="line">function add(arg1: string, arg2: string): string</span><br><span class="line">function add(arg1: number, arg2: number): number</span><br><span class="line">// 实现：</span><br><span class="line">function add(arg1: string | number, arg2: string | number) &#123;</span><br><span class="line">   // 在实现上我们要注意严格判断两个参数的类型是否相等，而不能简单的写一个 arg1 + arg2</span><br><span class="line">   if(typeof arg1 === &#x27;string&#x27; &amp;&amp; typeof arg2 === &#x27;string&#x27;) &#123;</span><br><span class="line">       return arg1 + arg2;</span><br><span class="line">  &#125; else if(typeof arg1 === &#x27;number&#x27; &amp;&amp; typeof arg2 === &#x27;number&#x27;) &#123;</span><br><span class="line">       return arg1 + arg2;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">//逻辑仍然需要自己写</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="类型断言"><a href="#类型断言" class="headerlink" title="类型断言"></a>类型断言</h1><p>  <em>值 as 类型   &#x2F;  &lt;类型&gt;值</em></p>
+<h3 id="将一个联合类型断言为其中一个类型"><a href="#将一个联合类型断言为其中一个类型" class="headerlink" title="将一个联合类型断言为其中一个类型"></a>将一个联合类型断言为其中一个类型</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// 定义一个函数，获得一个数字或是字符串的长度</span><br><span class="line">function getLength(x:string|number):number&#123;</span><br><span class="line">    // 实参可能是 string 也可能是 number</span><br><span class="line"></span><br><span class="line">    // return x.toString().length 如果本身就是一个字符串，它就不需要 toString(),多余的操作</span><br><span class="line"></span><br><span class="line">    // if(x.length)&#123;//判断有没有该属性，是否是字符串</span><br><span class="line">    //     // 但是 ts 又不确定 这是一个什么样的类型，就会报错</span><br><span class="line">    //     return x.length</span><br><span class="line">    // &#125;else&#123;</span><br><span class="line">    //     return x.toString().length</span><br><span class="line">    // &#125;</span><br><span class="line"></span><br><span class="line">    // 类型断言，肯定这是一个字符串</span><br><span class="line">    if ((x as string).length) &#123;</span><br><span class="line">        // return x.length 但是使用的时候，都需要断言一下</span><br><span class="line">        // 断言有两种方式： as \ &lt;类型&gt;变量</span><br><span class="line">        return (&lt;string&gt;x ).length</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        return x.toString().length</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(getLength(&#x27;123123&#x27;));</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="将任何类型断言为-any"><a href="#将任何类型断言为-any" class="headerlink" title="将任何类型断言为 any"></a>将任何类型断言为 any</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// --- 将任何类型断言为 any . any类型能访问任何属性和方法</span><br><span class="line">(window as any).a = 213</span><br><span class="line">// 但 any 有可能掩盖真正的类型错误</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="将-any类型-断言为-具体的数据类型"><a href="#将-any类型-断言为-具体的数据类型" class="headerlink" title="将 any类型 断言为 具体的数据类型"></a>将 any类型 断言为 具体的数据类型</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function abc(a:any,b:any):any&#123;</span><br><span class="line">    return a+b</span><br><span class="line">&#125;</span><br><span class="line">// 确定该值得类型 </span><br><span class="line">const a = abc(1,2) as number</span><br><span class="line">const b = abc(&#x27;123&#x27;,&#x27;456&#x27;) as string</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><h1 id="类型别名-type"><a href="#类型别名-type" class="headerlink" title="类型别名 type"></a>类型别名 type</h1><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 给类型 起别名</span><br><span class="line">type s = string</span><br><span class="line">let str:s = &#x27;123&#x27;</span><br><span class="line">// str = 123 ; 不能将类型“number”分配给类型“string”。</span><br><span class="line"></span><br><span class="line">// 联合类型  </span><br><span class="line">// 定义别名</span><br><span class="line">type all =  string | number | boolean</span><br><span class="line">let a1:all = 123</span><br><span class="line">// let b1: all = []</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="字符串字面量类型"><a href="#字符串字面量类型" class="headerlink" title="字符串字面量类型"></a>字符串字面量类型</h1><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 字符串字面量类型 。 约束取值，是某个选项中 得一个</span><br><span class="line">type color = &quot;red&quot;|&quot;blue&quot;|&quot;pink&quot; // 只能取三者中的一个</span><br><span class="line">let c:color = &quot;red&quot; </span><br><span class="line">console.log(c);</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="元组-Tuple"><a href="#元组-Tuple" class="headerlink" title="元组 Tuple"></a>元组 Tuple</h1><p>数组合并类相同类型的对象，而元组（Tuple）合并了不同类型的对象</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let arr03: number [] = [1,2,3,4]</span><br><span class="line"></span><br><span class="line">// Tuple ,指定了长度和类型</span><br><span class="line">let TupleArr: [string,number] = [&#x27;1&#x27;,2]</span><br><span class="line"></span><br><span class="line">// 添加值的时候，只能是 定义了得数据类型</span><br><span class="line">TupleArr.push(333)</span><br><span class="line">TupleArr.push(&#x27;312&#x27;)</span><br><span class="line">// TupleArr.push(true)  类型“boolean”的参数不能赋给类型“string | number”的参数。</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="枚举-enum"><a href="#枚举-enum" class="headerlink" title="枚举 enum"></a>枚举 enum</h1><ul>
+<li>枚举成员会被赋值为从0开始递增的数字，同时也会对枚举值到枚举名进行反向映射</li>
+<li>手动赋值，枚举会根据前面的值进行递增</li>
+<li>如果手动赋值与自动赋值的值，重复了，Ts不会报错，后面覆盖前面的值</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">// 为一组数值赋予名称</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">-   枚举成员会被赋值为从0开始递增的数字，同时也会对枚举值到枚举名进行反向映射</span><br><span class="line">-   手动赋值，枚举会根据前面的值进行递增</span><br><span class="line">-   如果手动赋值与自动赋值的值，重复了，Ts不会报错，后面覆盖前面的值</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">// 1，2，34，4      给数据起名称</span><br><span class="line">enum NumberType&#123;</span><br><span class="line">    // 默认为 0</span><br><span class="line">    one=1, //手动赋值的话，就会递增下去赋值</span><br><span class="line">    two=6,//如果手动赋值 为6</span><br><span class="line">    three,//会根据前面的值 递增加一</span><br><span class="line">    four=1 // 手动赋值时，如果有重复的值，最先的会被覆盖</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(NumberType);</span><br><span class="line">// &#123;</span><br><span class="line">//     &#x27;7&#x27;: &#x27;three&#x27;,</span><br><span class="line">//     one: 1,</span><br><span class="line">//     two: 6,</span><br><span class="line">//     three: 7,</span><br><span class="line">//     four: 1</span><br><span class="line">//   &#125;</span><br><span class="line">//   four</span><br><span class="line"></span><br><span class="line">// 枚举  可以通过名称去拿取值，也可以通过值去拿去名称 </span><br><span class="line">console.log(NumberType[&#x27;1&#x27;]);//two</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="常数项和计算所得项"><a href="#常数项和计算所得项" class="headerlink" title="常数项和计算所得项"></a>常数项和计算所得项</h2><ul>
+<li>上面的直接赋值，就是 常数项。计算所得项，指的是 枚举的属性值是通过计算得出</li>
+<li>需要注意，计算所得项后面不能跟自动赋值项，因为在初始化时，还没有计算出值，但后面又需要依靠这个值进行递增</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// /--------------------- 常数项和计算所得项 </span><br><span class="line">// 上面定义的就是常数项 </span><br><span class="line">enum C &#123;</span><br><span class="line">    red,</span><br><span class="line">    blue=&quot;blue&quot;.length,</span><br><span class="line">    // 枚举成员必须具有初始化表达式。</span><br><span class="line">    // 因为 枚举的值需要计算前面的值，但在初始化时，还没计算得出</span><br><span class="line">    // green //拿不到前面具体的值，但 需要初始化了</span><br><span class="line">    pink=12</span><br><span class="line">&#125;</span><br><span class="line">// 计算所得项，需要赋值在已经确定赋值的枚举项之前</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="常数枚举-const-enum"><a href="#常数枚举-const-enum" class="headerlink" title="常数枚举 const enum"></a>常数枚举 const enum</h2><ul>
+<li>普通枚举 与 常数枚举的区别在于 编译的时候，会被删除，并且不能包含计算成员</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const enum Obj&#123;</span><br><span class="line">    o,</span><br><span class="line">    // b = &quot;blue&quot;.length, 不允许计算所得项</span><br><span class="line">    b,</span><br><span class="line">    j = 10+10 // 允许，这种不是计算所得项</span><br><span class="line">&#125;</span><br><span class="line">// 普通枚举 与 常数枚举的区别在于 编译的时候，会被删除，并且不能包含计算成员</span><br><span class="line">console.log(Obj.o); // console.log(0 /* Obj.o */);</span><br><span class="line">console.log(Obj.b); // console.log(1 /* Obj.b */);</span><br><span class="line">console.log(Obj.j); // console.log(20 /* Obj.j */);</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="外部枚举-declare-enum"><a href="#外部枚举-declare-enum" class="headerlink" title="外部枚举 declare enum"></a>外部枚举 declare enum</h2><ul>
+<li>多用在声明文件.只会用于编译的时候检查，编译结果中会被删除</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// ---- 外部枚举 declare enum ， 多用在声明文件</span><br><span class="line">// declare 定义的类型，只会用于编译的时候检查，编译结果中会被删除</span><br><span class="line">declare enum ABC&#123;</span><br><span class="line">    a,b,c</span><br><span class="line">&#125;</span><br><span class="line">console.log(ABC.a); //与常数枚举相似，但 外部枚举会将枚举删除掉，直接 访问 ABC.a</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="外部枚举与常数枚举结合使用"><a href="#外部枚举与常数枚举结合使用" class="headerlink" title="外部枚举与常数枚举结合使用"></a>外部枚举与常数枚举结合使用</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 外部枚举 与 常数枚举 可结合使用，效果二者合并</span><br><span class="line">declare const enum BCB&#123;</span><br><span class="line">    i,</span><br><span class="line">    j,</span><br><span class="line">    k</span><br><span class="line">&#125;</span><br><span class="line">console.log(BCB.j);//console.log(1 /* BCB.j */);</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="类-class"><a href="#类-class" class="headerlink" title="类 class"></a>类 class</h1><ul>
+<li>js中是通过构造函数来实现类的继承，在es6中迎来 class </li>
+<li>Ts 除了实现了所有es6中类的功能外，还添加了一些新的用法</li>
+</ul>
+<h2 id="属性和方法"><a href="#属性和方法" class="headerlink" title="属性和方法"></a>属性和方法</h2><ul>
+<li>与js不同的是，class的构造器中，必选指的参数的类型，才能允许使用。</li>
+<li>构造器形参默认类型 any ，建议添加上类型</li>
+</ul>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>继承可以扩展现有的类</p>
+<ul>
+<li>类与类之间存在继承关系，通过 extends 继承</li>
+<li>子类 通过 super 调用 父类的属性和方法</li>
+<li>子类可以重新父类的方法</li>
+</ul>
+<h2 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h2><p>在TS中可以通过存储器（get,set），来截取对于对象成员的访问。也就是使用存储器去改变这个属性的赋值和行为</p>
+<ul>
+<li>存储器，可以控制对象成员的访问</li>
+<li>get 只能读取值，不能修改值</li>
+<li>set 可以修改值</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">class Name&#123;</span><br><span class="line">    firstName:string</span><br><span class="line">    lastName:string</span><br><span class="line">    constructor(firstName:string,lastName:string)&#123;</span><br><span class="line">        this.firstName  = firstName</span><br><span class="line">        this.lastName  = lastName</span><br><span class="line">    &#125;</span><br><span class="line">    // 通过存储器读取</span><br><span class="line">    get fullName()&#123;</span><br><span class="line">        return this.firstName+&#x27;-&#x27;+this.lastName</span><br><span class="line">    &#125;</span><br><span class="line">    set fullName( val )&#123;</span><br><span class="line">        //获取修改的值</span><br><span class="line">        console.log(val);</span><br><span class="line">        let names = val.split(&#x27;-&#x27;)</span><br><span class="line">        // return</span><br><span class="line">        this.firstName = names[0]</span><br><span class="line">        this.lastName = names[1]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">------</span><br><span class="line">const n = new Name(&quot;du&quot;,&quot;ring&quot;)</span><br><span class="line">console.log(n.fullName);</span><br><span class="line">// 只允许读取，如果需要修改，需要设置 set</span><br><span class="line">n.fullName = &#x27;song-yang&#x27;</span><br><span class="line">console.log(n.fullName);</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="静态成员-与-修饰符"><a href="#静态成员-与-修饰符" class="headerlink" title="静态成员 与 修饰符"></a>静态成员 与 修饰符</h2><ul>
+<li>被 static 所修饰的 成员，可以直接通过类名访问，不需要通过类的实例访问</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class A&#123;</span><br><span class="line">   static name1:string</span><br><span class="line">   static sayHi()&#123;</span><br><span class="line">        console.log(&#x27;nhao&#x27;);        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(A.name1)</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>public 修饰的成员，都可以在任何地方被访问到，默认所有的成员都是 public</li>
+<li>private 修饰的属性或方法是私有的，不能在声明它的类的外部访问</li>
+<li>protected 修饰的属性或方法是受保护的，它和 private 类似，区别是它在子类中也是允许被访问的</li>
+</ul>
+<h2 id="初始化属性"><a href="#初始化属性" class="headerlink" title="初始化属性"></a>初始化属性</h2><p>修饰符修饰构造函数的形参，会创建并且初始化参数，而不需要先定义参数再赋值</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 如果 readonly 修饰了形参，它会创建并且初始化 那个形参参数</span><br><span class="line">class Y&#123;</span><br><span class="line">    // 声明 age变量，赋值age变量</span><br><span class="line">    // constructor(readonly age:number)&#123;</span><br><span class="line">    // constructor(public age:number)&#123;</span><br><span class="line">    // constructor(private age:number)&#123;</span><br><span class="line">    constructor(protected age:number)&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(new Y(5));</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><p>抽象类不能被实例化</p>
+<ul>
+<li>抽象类实际上是为子类服务的</li>
+<li>抽象类不能被实例，所以 constructor 没有定义的必要。但定义了也不会报错</li>
+<li>对于抽象方法，在定义时不能被实现。具体的实现需要子类操作</li>
+<li>抽象子类可以不实现抽象父类</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">不能被具体实现</span><br><span class="line">    abstract say()&#123;</span><br><span class="line">        // 方法“say”不能具有实现，因为它标记为抽象。</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>对于普通子类，继承抽象父类时，必须实现当中的抽象成员</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 子类必须实现抽象父类的方法和</span><br><span class="line">class abSon extends abClass&#123;</span><br><span class="line">    name: any;</span><br><span class="line">    run() &#123;</span><br><span class="line">        // 子类具体实现</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="类与接口"><a href="#类与接口" class="headerlink" title="类与接口"></a>类与接口</h1><ul>
+<li>接口与类联合使用，对类的一部分行为进行抽象。当多个类中的属性都一致时，可以抽取这部分</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class A&#123;                |   class B&#123;</span><br><span class="line">    run()&#123;&#125;             |       run()&#123;&#125;    </span><br><span class="line">&#125;                       |   &#125;</span><br><span class="line">interface Run()&#123;</span><br><span class="line">    run()   //只需要定义，不需要具体实现</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>可以实现多个接口</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class A implements Run,Eat&#123;            </span><br><span class="line">    run()&#123;&#125;                             </span><br><span class="line">    eat()&#123;&#125;                            </span><br><span class="line">&#125;                                    </span><br><span class="line">interface Eat()&#123;</span><br><span class="line">    eat()   //只需要定义，不需要具体实现</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="接口继承接口"><a href="#接口继承接口" class="headerlink" title="接口继承接口"></a>接口继承接口</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">将多个接口组合为一个接口</span><br><span class="line">interface A&#123;                |   interface B&#123;</span><br><span class="line">    run()                   |       say()    </span><br><span class="line">&#125;                           |   &#125;</span><br><span class="line">interface AnB extends A,B&#123;</span><br><span class="line">&#125;</span><br><span class="line">// 需要实现所有的接口方法</span><br><span class="line">class C1 implements AnB&#123;</span><br><span class="line">    run() &#123;</span><br><span class="line">        throw new Error(&quot;Method not implemented.&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">    eat() &#123;</span><br><span class="line">        throw new Error(&quot;Method not implemented.&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="接口继承类"><a href="#接口继承类" class="headerlink" title="接口继承类"></a>接口继承类</h2><p>一般的面向语言，是不允许的。但这是TS</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class AA&#123;</span><br><span class="line">    constructor(public name : string)&#123;&#125;</span><br><span class="line"></span><br><span class="line">    say()&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">interface C2 extends AA&#123; //接口会继承类中的实例成员</span><br><span class="line">   age:number</span><br><span class="line">&#125;</span><br><span class="line">// 接口就包含了，本身的还有继承过来的成员</span><br><span class="line">// 使用接口约束对象</span><br><span class="line">let person:C2 =&#123;</span><br><span class="line">    age: 0,</span><br><span class="line">    name: &quot;&quot;,</span><br><span class="line">    say: function (): void &#123;</span><br><span class="line">        throw new Error(&quot;Function not implemented.&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="声明合并"><a href="#声明合并" class="headerlink" title="声明合并"></a>声明合并</h1><p>两个相同名字的 函数、接口或类，会合并为同一个类型</p>
+<h2 id="函数合并"><a href="#函数合并" class="headerlink" title="函数合并"></a>函数合并</h2><p>例如 <strong>函数的重载</strong>,两种参数类型，合二为一</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 声明：</span><br><span class="line">function add(arg1: string, arg2: string): string</span><br><span class="line">function add(arg1: number, arg2: number): number</span><br><span class="line">// 实现：</span><br><span class="line">function add(arg1: string | number, arg2: string | number) &#123;</span><br><span class="line">   // 在实现上我们要注意严格判断两个参数的类型是否相等，而不能简单的写一个 arg1 + arg2</span><br><span class="line">   if(typeof arg1 === &#x27;string&#x27; &amp;&amp; typeof arg2 === &#x27;string&#x27;) &#123;</span><br><span class="line">       return arg1 + arg2;</span><br><span class="line">  &#125; else if(typeof arg1 === &#x27;number&#x27; &amp;&amp; typeof arg2 === &#x27;number&#x27;) &#123;</span><br><span class="line">       return arg1 + arg2;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add(&#x27;123&#x27;,&#x27;rty&#x27;));//function add(arg1: string, arg2: string): string (+2 overloads)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="接口合并"><a href="#接口合并" class="headerlink" title="接口合并"></a>接口合并</h2><ul>
+<li>对于重复出现的key名，当中的数据类型要保持一致</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">// 接口合并</span><br><span class="line">interface A&#123;              </span><br><span class="line">    run()           </span><br><span class="line">    name:string          </span><br><span class="line">&#125;                           </span><br><span class="line">interface A&#123;              </span><br><span class="line">    eat()  </span><br><span class="line">    //后续属性声明必须属于同一类型。属性“name”的类型必须为“string”，但此处却为类型“number”。</span><br><span class="line">    //name:number                        </span><br><span class="line">&#125;     </span><br><span class="line">let aa:A=&#123;</span><br><span class="line">    run: function () &#123;</span><br><span class="line">        throw new Error(&quot;Function not implemented.&quot;);</span><br><span class="line">    &#125;,</span><br><span class="line">    eat: function () &#123;</span><br><span class="line">        throw new Error(&quot;Function not implemented.&quot;);</span><br><span class="line">    &#125;,</span><br><span class="line">    name: &quot;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="类的合并"><a href="#类的合并" class="headerlink" title="类的合并"></a>类的合并</h2><ul>
+<li>规则与接口合并一致</li>
+</ul>
+<h1 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h1><ul>
+<li>在定义函数、接口或类时，不预先指定具体的类型，而是使用的时候再指定类型的一种特性。</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">//  定义一个函数，有两个参数，其一为数据，其二为数量</span><br><span class="line">// 其函数作用：根据数量产生对应个数的数据，存放在一个数组中</span><br><span class="line">// （123，3）--- 【123，123，123】</span><br><span class="line"></span><br><span class="line">// 确保传入的 count 是数字，知道返回的是一个数组，但不确定其类型</span><br><span class="line">// 通过传入的 value 来决定返回是什么数据类型的数组</span><br><span class="line">// 尽量避免使用 any</span><br><span class="line">function getArr(value:number,count:number):number[]&#123;</span><br><span class="line">    return [1]</span><br><span class="line">&#125;</span><br><span class="line">// 如果输入的是一个 string 类型，就意味着需要重新定义函数</span><br><span class="line">// function getArr(value:string,count:number):string[]&#123;</span><br><span class="line">//     return [&#x27;&#x27;]</span><br><span class="line">// &#125;</span><br><span class="line">// 或许可以使用 联合类型</span><br><span class="line">// function getArr(value:number|string,count:number):number|string[]&#123;</span><br><span class="line">//     return </span><br><span class="line">// &#125;</span><br><span class="line"></span><br><span class="line">// 使用泛型，就是执行的时候，再指定数据的类型</span><br><span class="line">function getArr2&lt;T&gt;(value:T,count:number):T[]&#123;</span><br><span class="line">    const arr : T[] = []</span><br><span class="line">    for(let i = 0;i &lt; count;i++)&#123;</span><br><span class="line">        arr.push(value)</span><br><span class="line">    &#125;</span><br><span class="line">    return arr</span><br><span class="line">&#125;</span><br><span class="line">console.log(getArr2&lt;number&gt;(123,3)); [ 123, 123, 123 ]</span><br><span class="line">// 不指定类型，也会类型推断</span><br><span class="line">console.log(getArr2(&#x27;123&#x27;,3));[ &#x27;123&#x27;, &#x27;123&#x27;, &#x27;123&#x27; ]</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>多个泛型参数</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// [&#x27;123&#x27;,123]  -- &gt; [123,&#x27;123&#x27;]</span><br><span class="line">// 调转参数的顺序 使用泛型</span><br><span class="line">// 不确定每个数据的类型 -- 元组</span><br><span class="line">function bAdFn&lt;T,U&gt;(t:[T,U]):[U,T]&#123;</span><br><span class="line">    return [t[1],t[0]]</span><br><span class="line">&#125;</span><br><span class="line">console.log(bAdFn([123,true]));</span><br><span class="line"></span><br><span class="line">// 泛型的使用，先在函数名后定义泛型</span><br><span class="line">// function xxx&lt;T,U&gt; //定义泛型的个数，位置</span><br><span class="line">// (t:[T,U])  //传入的参数类型</span><br><span class="line">// :[U,T] //返回值的类型</span><br><span class="line"></span><br><span class="line">// 传值时，使用泛型断言</span><br><span class="line">bAdFn&lt;string,boolean&gt;([&#x27;123&#x27;,false])</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="泛型约束"><a href="#泛型约束" class="headerlink" title="泛型约束"></a>泛型约束</h2><ul>
+<li>函数内部使用泛型变量的时候，由于事先不知道它是那种类型，使用不能随意操作数据的属性或方法：</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// 函数内部使用泛型变量的时候，由于事先不知道它是那种类型，使用不能随意操作数据的属性或方法：</span><br><span class="line">function getLength&lt;T&gt;(str:T):T&#123;</span><br><span class="line">    // 还不知道这个数据类型，有没有这个属性</span><br><span class="line">    // console.log(str.length);    //所以会报错</span><br><span class="line">    return str</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 可以定义接口，对泛型进行约束，只允许函数传入的数据类型包含 length</span><br><span class="line">interface ILength&#123;</span><br><span class="line">    length:number,</span><br><span class="line">    // keys:string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// T 是否含有 ILength 中所有的属性</span><br><span class="line">function getLength2&lt;T extends ILength&gt;(str:T):T&#123;</span><br><span class="line">    // 还不知道这个数据类型，有没有这个属性</span><br><span class="line">    console.log(str.length);    //所以会报错</span><br><span class="line">    return str</span><br><span class="line">&#125;</span><br><span class="line">console.log(getLength2(&#x27;123&#x27;));</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="泛型接口"><a href="#泛型接口" class="headerlink" title="泛型接口"></a>泛型接口</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 接口中的某些成员，不确定类型，只有实现的时候才能知晓</span><br><span class="line">interface IFan&lt;T&gt;&#123;</span><br><span class="line">    name:T,</span><br><span class="line">    age:number</span><br><span class="line">&#125;</span><br><span class="line">// 约束对象</span><br><span class="line">let c1:IFan&lt;string&gt; = &#123;</span><br><span class="line">    name: &quot;&quot;,</span><br><span class="line">    age: 0</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="泛型类"><a href="#泛型类" class="headerlink" title="泛型类"></a>泛型类</h2><ul>
+<li>当中的成员不确定数据的类型</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Son&lt;T&gt;&#123;</span><br><span class="line">    constructor(public name:T)&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let son = new Son&lt;string&gt;(&#x27;during&#x27;)</span><br><span class="line">console.log(son);</span><br></pre></td></tr></table></figure></div>
+            
+        </div>
+        <div class="page-template-comments">
+            
+        </div>
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">Store 碎片</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br> 
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.2.3</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2022/8/17 11:45:14
+            </div>
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/menu-shrink.js"></script>
+
+<script src="/js/tools/go-top-bottom.js"></script>
+
+<script src="/js/tools/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/tools/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
